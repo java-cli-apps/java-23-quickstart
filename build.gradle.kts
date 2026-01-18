@@ -22,12 +22,15 @@ dependencies {
 }
 
 distributions {
-    create("scripts") {
+    register("scripts") {
         contents {
             from("src/main/java") {
                 include("**/*.java")
                 rename(STARTER_APP, APP_NAME)
                 into("src")
+                filePermissions {
+                    unix("rwxr-xr-x")
+                }
             }
             from(configurations.runtimeClasspath) {
                 into("lib")
@@ -36,6 +39,9 @@ distributions {
                 include("*.sh")
                 rename(STARTER_APP, APP_NAME)
                 into("bin")
+                filePermissions {
+                    unix("rwxr-xr-x")
+                }
             }
         }
     }
