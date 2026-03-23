@@ -1,5 +1,7 @@
 # Un template d'Application en Ligne de Commande (CLI) avec Java 23 et les JEP 458 et 477
 
+[![Classic Build](https://github.com/java-cli-apps/java-23-quickstart/actions/workflows/build.yml/badge.svg)](https://github.com/java-cli-apps/java-23-quickstart/actions/workflows/build.yml)
+
 Le template **java-23-quickstart** permet de démarrer une nouvelle application en commande ligne avec Java et Gradle.
 
 Ce template nécessite d'utiliser Java 23 ou une version supérieure car il utilise les JEPs suivantes :

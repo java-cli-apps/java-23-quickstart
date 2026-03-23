@@ -5,7 +5,7 @@ import language.fr.Bonjour;
 
 public interface Greeting {
 
-    enum Language  {
+    enum Language {
         French, English
     }
 
