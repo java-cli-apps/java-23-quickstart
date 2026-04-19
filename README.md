@@ -6,9 +6,9 @@ Le template **java-23-quickstart** permet de démarrer une nouvelle application 
 
 Ce template nécessite d'utiliser Java 23 ou une version supérieure car il utilise les JEPs suivantes :
 
-* La [JEP 458](https://openjdk.org/jeps/458) qui permet de lancer un programme Java dont le code est réparti dans
+* La [JEP 458: Launch Multi-File Source-Code Programs](https://openjdk.org/jeps/458) qui permet de lancer un programme Java dont le code est réparti dans
   plusieurs fichiers sources sans avoir besoin de les compiler préalablement
-* La [JEP 477](https://openjdk.org/jeps/477) qui permet de :
+* La [JEP 477: Implicitly Declared Classes and Instance Main Methods (Third Preview)](https://openjdk.org/jeps/477) qui permet de :
   * Se passer de déclaration de classe
   * Simplifier la déclaration de la méthode `main`
   * Utiliser les méthodes de la classe `java.io.IO` sans devoir les importer
