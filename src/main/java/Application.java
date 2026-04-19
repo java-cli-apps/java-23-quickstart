@@ -1,7 +1,7 @@
 //usr/bin/env java --enable-preview --class-path ${APP_DIR:-.}/lib/'*' "$0" "$@"; exit $?
 
-import language.api.Greeting;
-import language.api.Greeting.Language;
+import language.api.Greeter;
+import language.api.Greeter.Language;
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
@@ -19,6 +19,6 @@ private int polyglotHello(
         @Option(names = {"-l", "--language"}, required = true, description = "Valid values are: ${COMPLETION-CANDIDATES}")
         Language language
 ) {
-    println(Greeting.byLanguage(language).getGreeting());
+    println(Greeter.byLanguage(language).greet());
     return CommandLine.ExitCode.OK;
 }

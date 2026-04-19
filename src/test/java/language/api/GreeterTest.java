@@ -6,17 +6,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class GreetingTest {
+class GreeterTest {
 
     @Test
     void bonjourShouldSayBonjour() {
         Bonjour bonjour = new Bonjour();
-        assertTrue(bonjour.getGreeting().startsWith("Bonjour"));
+        assertTrue(bonjour.greet().startsWith("Bonjour"));
     }
 
     @Test
     void helloShouldSayHello() {
         Hello hello = new Hello();
-        assertTrue(hello.getGreeting().startsWith("Hello"));
+        assertTrue(hello.greet().startsWith("Hello"));
     }
 }

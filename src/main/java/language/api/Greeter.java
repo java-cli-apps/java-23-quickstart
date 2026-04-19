@@ -3,15 +3,15 @@ package language.api;
 import language.en.Hello;
 import language.fr.Bonjour;
 
-public interface Greeting {
+public interface Greeter {
 
     enum Language {
         French, English
     }
 
-    String getGreeting();
+    String greet();
 
-    static Greeting byLanguage(Language language) {
+    static Greeter byLanguage(Language language) {
         return switch (language) {
             case French -> new Bonjour();
             case English -> new Hello();
